@@ -19,6 +19,7 @@ pipeline {
                 sh('chmod +x ./scripts/fibonacci.sh')
             }
         }
+        //Three ways to call the same executable file
         stage('Relative path') {
             steps {
                 sh("./scripts/fibonacci.sh ${env.NUMBER}")
